@@ -1,0 +1,14 @@
+name = "cf-worker-new"
+main = "index.js"
+compatibility_date = "2026-09-19"
+
+# D1数据库绑定（使用已创建好的 flag_db）
+[[d1_databases]]
+binding = "DB"
+database_name = "flag_db"
+database_id = "3f54e105-d763-4f39-bd4a-d41c6e053cbd"
+
+# R2私有桶绑定（flag-storage，已禁用公共访问）
+[[r2_buckets]]
+binding = "FLAGS_BUCKET"
+bucket_name = "flag-storage"
